@@ -53,3 +53,25 @@ body {
 div {
 	border: 1px solid Chocolate;
 }
+/* Navigation Section */
+.top-navigation {
+	background-color: #fff;
+}
+
+.top-navigation .links {
+	float: right;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-top:  25px;
+}
+
+.top-navigation > .content {
+    width: 	80%;
+    /* height: 70px; */
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
