@@ -1,3 +1,10 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,12 +54,14 @@ table {
 	border-spacing: 0;
 }
 
+/* temporary outlining */
 body {
 	background-color: LightGray;
+	font-family: 'Roboto', sans-serif; 
 }
-div {
+/* div {
 	border: 1px solid Chocolate;
-}
+} */
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
@@ -60,18 +69,97 @@ div {
 
 .top-navigation .links {
 	float: right;
+	
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+	/* -webkit-font-smoothing: antialiased; */
 }
 
 .top-navigation .links li {
 	display: inline-block;
 	margin-left: 25px;
-	margin-top:  25px;
+	margin-top:  25px; 
 }
 
 .top-navigation > .content {
     width: 	80%;
     /* height: 70px; */
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0px 25px;
 }
+
+.top-navigation .logo {
+	height:70px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+/**
+ * Introduction Section
+ */
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+/**
+ * The buttons
+ */
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+.introduction .half {
+    width: 49%;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+/**
+ * button
+ */
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+
+
 
